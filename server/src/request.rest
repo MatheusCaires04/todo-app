@@ -1,0 +1,20 @@
+GET http://localhost:5001/todos
+
+###
+POST http://localhost:5001/create
+Content-Type: application/json
+
+{
+    "text": "tarefa 1"
+}
+
+###
+PUT http://localhost:5001/update-todo/63f65ad62aed7e85beb986e7
+Content-Type: application/json
+
+{
+    "text": "tarefa 4"
+}
+
+###
+DELETE http://localhost:5001/delete-todo/63f65ad62aed7e85beb986e7
